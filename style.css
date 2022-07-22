@@ -1,0 +1,95 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --color-background: #fafafa;
+  --color-content: #ffffff;
+  --color-button: #0095f6;
+  --color-border: rgb(219, 219, 219);
+  --color-text-verification: rgb(142, 142, 142);
+  --color-text-stores: rgb(38, 38, 38);
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* ========== MAIN ========== */
+.l-main {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  border: 1px solid black;
+}
+
+/* ========== SECTION => ARTICLE CELLPHONE  ========== */
+
+.c-article__cellphone {
+  position: relative;
+  border: 1px solid green;
+}
+
+.e-cellphone__carrosel {
+  position: absolute;
+  z-index: 1;
+  left: 157px;
+  top: 26px;
+
+  opacity: 1;
+}
+
+.c-article__login {
+  border: 1px solid red;
+}
+
+/* ========== FOOTER ========== */
+.l-footer {
+  position: relative;
+
+  width: 100%;
+  height: 20vh;
+  border: 1px solid purple;
+}
+
+@media (max-width: 450px) {
+  body {
+    background-color: var(--color-content);
+  }
+
+  /* ========== MAIN ========== */
+  .c-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .c-article__login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 875px) {
+  .c-article__cellphone {
+    display: none;
+  }
+}
