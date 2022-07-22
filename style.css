@@ -29,6 +29,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font: 600 14px "Segoe UI", sans-serif;
+  color: var(--color-content);
 }
 
 .c-section {
@@ -38,6 +41,50 @@ body {
   flex-direction: row;
 
   border: 1px solid black;
+}
+
+.c-article__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-article__login__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 2rem;
+
+  background-color: var(--color-content);
+
+  padding: 2rem 2rem;
+}
+
+.e-img-user {
+  width: 86px;
+  height: 86px;
+  clip-path: circle();
+}
+
+.e-button-login {
+  border: none;
+  background-color: var(--color-button);
+  padding: 0.4rem 0.5rem;
+
+  color: var(--color-content);
+  font-weight: 600;
+
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.e-link-remove {
+  cursor: pointer;
+  color: var(--color-button);
+  text-decoration: none;
 }
 
 /* ========== SECTION => ARTICLE CELLPHONE  ========== */
