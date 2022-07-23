@@ -11,30 +11,39 @@ document.addEventListener('DOMContentLoaded', () => {
       carrosel_1.classList.remove('show-carrosel')
       carrosel_1.classList.add('hide-carrosel')
       carrosel_2.classList.add('show-carrosel')
-    }, 4000)
+    }, 3000)
   })
 
   carrosel_2.addEventListener('transitionend', () => {
     setTimeout(() => {
+      carrosel_1.classList.remove('show-carrosel')
+      carrosel_1.classList.add('hide-carrosel')
+
       carrosel_2.classList.remove('show-carrosel')
       carrosel_2.classList.add('hide-carrosel')
       carrosel_3.classList.add('show-carrosel')
-    }, 4000)
+    }, 3000)
   })
 
   carrosel_3.addEventListener('transitionend', () => {
     setTimeout(() => {
+      carrosel_1.classList.remove('show-carrosel')
+      carrosel_1.classList.add('hide-carrosel')
+
       carrosel_3.classList.remove('show-carrosel')
       carrosel_3.classList.add('hide-carrosel')
       carrosel_4.classList.add('show-carrosel')
-    }, 4000)
+    }, 3000)
   })
 
   carrosel_4.addEventListener('transitionend', () => {
     setTimeout(() => {
+      carrosel_1.classList.remove('show-carrosel')
+      carrosel_1.classList.add('hide-carrosel')
+
       carrosel_4.classList.remove('show-carrosel')
       carrosel_4.classList.add('hide-carrosel')
       carrosel_1.classList.add('show-carrosel')
-    }, 4000)
+    }, 3000)
   })
 })
